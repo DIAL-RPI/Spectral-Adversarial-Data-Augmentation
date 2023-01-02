@@ -27,10 +27,6 @@ Noted that our code is tested based on [PyTorch 1.8.1](http://pytorch.org/)
 All datasets used in our work are publicly available.
 In our experiments, we followed the data precrossing in the [RandConv](https://github.com/wildphoton/RandConv/).
 
-- The trained model is at `./work/checkpoints`
-- The data splition used in our experiments is at `./work/data/data_info.csv`
-- Before running the code, please put the preprocessed images into `./work/data/img`
-
 ### Measure the sensitivity map of an ERM model
 
 Train and evaluate an ERM model by
@@ -48,6 +44,12 @@ Measure the sensitivity map of an ERM model by
 python ./AAAIcodeSubmissoin__model_sensitivity_map/model_sensitivity_map.py
 ```
 
+If you want to try SADA directly, __a example of model sensitivity map__ of an ERM model trained on DIGTS dataset is provided as in 
+
+```
+./AAAIcodeSubmissoin__model_sensitivity_map/sample/sample_map.pth
+```
+
 ### Train model with Spectral Adversarial Data Augmentation (SADA)
 
 Train and evaluate the models with SADA by
@@ -56,7 +58,7 @@ Train and evaluate the models with SADA by
 python ./AAAIcodeSubmissoin__SADA/train_SADA.py
 ```
 
-The key SADA data augmentation module is in 
+The key __SADA data augmentation module__ is in 
 
 ```
 ./AAAIcodeSubmissoin__SADA/sada.py
