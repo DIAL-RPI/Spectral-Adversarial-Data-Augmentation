@@ -71,9 +71,8 @@ Attack settings for all datasets:
 - `--step_size` step size of the adversarial attack on the amplitude spectrum. #Default: 0.08
 - `--num_steps` batch size of the attack steps. #Default: 5
 - `--tau` settings for the early stop acceleration. #Default: 1
-- `--tau` settings for the early stop acceleration. #Default: 1
-- `--random_init` if init with random perturb. #Default: True
-- `--randominit_type` settings for the early stop acceleration. #Default: 1
+- `--random_init` if or not initializing amplitude spertrums with random perturbations. #Default: True
+- `--randominit_type` type of random init type. #Default: 'normal'
 - `--criterion` loss functions to attack. #Default: 'ce', choices=['ce', 'kl']
 - `--direction` neg: standard attack || pos:inverse attack. #Default: neg, choices=['pos','neg']
 
