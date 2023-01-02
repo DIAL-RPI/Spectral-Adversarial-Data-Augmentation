@@ -65,7 +65,7 @@ The key __SADA data augmentation module__ is in
 ./AAAIcodeSubmissoin__SADA/sada.py
 ```
 
-Attack settings for all datasets:
+Augmentation settings for all datasets:
 
 - `--epsilon` iteration of the checkpoint to load. #Default: 0.2
 - `--step_size` step size of the adversarial attack on the amplitude spectrum. #Default: 0.08
@@ -88,11 +88,6 @@ Please cite these papers in your publications if it helps your research:
   year={2022}
 }
 ```
-
-Link to paper:
-
-- [*When Neural Networks Fail to Generalize? A Model Sensitivity Perspective*](https://arxiv.org/abs/2212.00850).
-
 
 ## Acknowledgement
 
