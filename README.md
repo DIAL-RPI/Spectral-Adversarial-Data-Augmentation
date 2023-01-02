@@ -3,7 +3,7 @@
 [![LICENSE](https://img.shields.io/badge/license-NPL%20(The%20996%20Prohibited%20License)-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
-This repository includes open-source codes, detailed experimental results and full references of our AAAI-2023 paper
+This repository includes open-source codes, detailed experimental results and full references of our AAAI 2023 work 
 
 [*When Neural Networks Fail to Generalize? A Model Sensitivity Perspective*](https://arxiv.org/abs/2212.00850).
 
