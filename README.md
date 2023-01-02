@@ -33,7 +33,7 @@ In our experiments, we followed the data precrossing in the [RandConv](https://g
 
 ### Measure the sensitivity map of an ERM model
 
-Train an ERM model by
+Train and evaluate an ERM model by
 
 ```bash
 python ./AAAIcodeSubmissoin__model_sensitivity_map/train_ERM.py
@@ -45,24 +45,34 @@ The model will be saved in `./AAAIcodeSubmissoin__model_sensitivity_map/save_dir
 Measure the sensitivity map of an ERM model by
 
 ```bash
-python ./AAAIcodeSubmissoin__model_sensitivity_map/train_ERM.py
+python ./AAAIcodeSubmissoin__model_sensitivity_map/model_sensitivity_map.py
 ```
 
 ### Train model with Spectral Adversarial Data Augmentation (SADA)
 
-Train models with SADA by
+Train and evaluate the models with SADA by
 
 ```bash
-python test_main.py
+python ./AAAIcodeSubmissoin__SADA/train_SADA.py
 ```
 
 The key SADA data augmentation module is in 
 
 ```
+./AAAIcodeSubmissoin__SADA/sada.py
 ```
 
-- `--iter` iteration of the checkpoint to load. #Default: 14500
-- `--batch_size` batch size of the parallel test. #Default: 64
+Attack settings for all datasets:
+
+- `--epsilon` iteration of the checkpoint to load. #Default: 0.2
+- `--step_size` step size of the adversarial attack on the amplitude spectrum. #Default: 0.08
+- `--num_steps` batch size of the attack steps. #Default: 5
+- `--tau` settings for the early stop acceleration. #Default: 1
+- `--tau` settings for the early stop acceleration. #Default: 1
+- `--random_init` if init with random perturb. #Default: True
+- `--randominit_type` settings for the early stop acceleration. #Default: 1
+- `--criterion` loss functions to attack. #Default: 'ce', choices=['ce', 'kl']
+- `--direction` neg: standard attack || pos:inverse attack. #Default: neg, choices=['pos','neg']
 
 ## Citation
 
@@ -86,7 +96,10 @@ Link to paper:
 
 We directly adopt some codes from the previous works as below:
 
-- [AugMix](https://arxiv.org/abs/2207.05231)
-- [RandConv](https://arxiv.org/abs/2207.05231)
+- [AugMix](https://github.com/google-research/augmix)
+- [AugMax](https://github.com/VITA-Group/AugMax)
+- [GUD](https://github.com/ricvolpi/generalize-unseen-domains)
+- [M-ADA](https://github.com/joffery/M-ADA)
+- [RandConv](https://github.com/wildphoton/RandConv/)
 
-We would like to thank these authors.
+We would like to thank these authors for sharing their codes.
