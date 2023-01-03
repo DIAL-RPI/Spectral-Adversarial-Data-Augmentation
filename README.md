@@ -7,6 +7,14 @@ This repository includes open-source codes, detailed experimental results and fu
 
 [*When Neural Networks Fail to Generalize? A Model Sensitivity Perspective*](https://arxiv.org/abs/2212.00850).
 
+## Overview
+
+<p align='center'><img src="static/visual_summary.png"/></p>
+
+The figure above summarizes our algorithm comparisons framework, *Spectral Adversarial Data Augmentation*.
+- First, our method computes [model sensitivity map](https://github.com/DIAL-RPI/Spectral-Adversarial-Data-Augmentation/tree/main/AAAIcodeSubmissoin__model_sensitivity_map) for the ERM model.
+- Then, we run [SADA](https://github.com/DIAL-RPI/Spectral-Adversarial-Data-Augmentation/tree/main/AAAIcodeSubmissoin__SADA) to generate the augmented data and train the model with the JS-div regularization.
+
 ## Prerequisites
 
 - Python 3.8
