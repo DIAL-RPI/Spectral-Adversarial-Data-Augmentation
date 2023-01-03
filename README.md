@@ -9,7 +9,7 @@ This repository includes open-source codes, detailed experimental results and fu
 
 ## Overview
 
-<p align='center'><img src="img/pic_overview.png"/></p>
+<p align='center'><img src="img/pic_overview.png" width=50% height=50% /></p>
 
 The figure above summarizes our algorithm comparisons framework, *Spectral Adversarial Data Augmentation*.
 - First, our method computes [model sensitivity map](https://github.com/DIAL-RPI/Spectral-Adversarial-Data-Augmentation/tree/main/AAAIcodeSubmissoin__model_sensitivity_map) for the ERM model.
