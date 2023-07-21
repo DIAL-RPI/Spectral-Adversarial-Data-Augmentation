@@ -6,7 +6,9 @@ This repository includes open-source codes, detailed experimental results and fu
 
 [*When Neural Networks Fail to Generalize? A Model Sensitivity Perspective*](https://ojs.aaai.org/index.php/AAAI/article/view/26328).
 
-## New! SAMix, an variant of __SADA__ is accepted by MICCAI-2023! 
+## News! 
+
+__SAMix__, an variant of __SADA__ is accepted by MICCAI-2023! 
 
 Please check [*SAMix*](https://github.com/RPIDIAL/SAMix).
 
