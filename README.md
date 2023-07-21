@@ -4,7 +4,11 @@
 
 This repository includes open-source codes, detailed experimental results and full references of our AAAI 2023 work 
 
-[*When Neural Networks Fail to Generalize? A Model Sensitivity Perspective*](https://arxiv.org/abs/2212.00850).
+[*When Neural Networks Fail to Generalize? A Model Sensitivity Perspective*](https://ojs.aaai.org/index.php/AAAI/article/view/26328).
+
+## New! SAMix, an variant of __SADA__ is accepted by MICCAI-2023! 
+
+Please check [*SAMix*](https://github.com/RPIDIAL/SAMix).
 
 ## Overview
 
@@ -88,11 +92,14 @@ Augmentation settings for all datasets:
 Please cite these papers in your publications if it helps your research:
 
 ```bibtex
-@article{zhang2022neural,
-  title={When Neural Networks Fail to Generalize? A Model Sensitivity Perspective},
+@inproceedings{zhang2023neural,
+  title={When neural networks fail to generalize? a model sensitivity perspective},
   author={Zhang, Jiajin and Chao, Hanqing and Dhurandhar, Amit and Chen, Pin-Yu and Tajer, Ali and Xu, Yangyang and Yan, Pingkun},
-  journal={arXiv preprint arXiv:2212.00850},
-  year={2022}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={37},
+  number={9},
+  pages={11219--11227},
+  year={2023}
 }
 ```
 
